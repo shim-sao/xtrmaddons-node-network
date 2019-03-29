@@ -7,12 +7,12 @@ require("module-alias/register");
 const assert = require("assert");
 
 // Import internal modules.
-const Network = require("@src");
+const Network = require("@dist");
 
 /* Defines */
 const ethName = "Ethernet";				// name of the ethernet card.
 const lanAddr = "192.168.1.12";   // IPV4 of the ethernet card on the LAN.
-const wanAddr = "10.8.2.9";				// IPV4 of the ethernet card on the WAN.
+const wanAddr = "10.8.1.11";				// IPV4 of the ethernet card on the WAN.
 const adaptIp = "192.168.109.33";  
 const addrs = [ wanAddr, lanAddr, adaptIp, "127.0.0.1" ];
 
@@ -54,7 +54,7 @@ describe("Network.getFromInterface() Mocha String Test", function () {
 	});
 
 	it(`should return [192.168.1.12], the adapterName is correct.`, function(){
-		const result = Network.getFromInterface({adapterName:"Ethernet"});
+		const result = Network.getFromInterface({adapterName:ethName});
 		assert.equal(result, "192.168.1.12");
 	});
 });
