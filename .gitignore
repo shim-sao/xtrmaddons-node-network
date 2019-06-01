@@ -62,7 +62,7 @@ typings/
 
 # Microsoft Visual
 .vs/
-.vscode/
+# .vscode/
 *.code-workspace
 jsconfig.json
 
