@@ -1,6 +1,6 @@
 {
   "name": "xtrmaddons-node-network",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "This package is intended to compile in a class of utilities a series of functions to perform actions on network interfaces..",
   "main": "dist/index.js",
   "scripts": {
